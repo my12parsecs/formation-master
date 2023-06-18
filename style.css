@@ -35,7 +35,8 @@ body {
 .main {
   width: 45rem;
   height: 35rem;
-  border: 1px solid;
+  border: 0px solid;
+  border-radius: 5px;
   margin: auto;
   background-color: rgb(152, 185, 152);
 }
