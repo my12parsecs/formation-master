@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://unpkg.com/glottologist"></script>
+</head>
+
+
+
+<body>
+    <select name="lang" id="" class="lang" style="cursor: pointer;">
+        <option value="en" class="langOption">English</option>
+        <option value="ja" class="langOption">日本語</option>
+    </select>
+
+    <div class="info-nav">
+        <button onclick="location.href='index.html'" class="back back-btn" glot-model="back">Back</button>
+        <h1 class="info-title" glot-model="info">Info</h1>
+        <p class="back"></p>
+    </div>
+
+
+
+    <div>
+        <ul>
+            <li>
+                <li>Is this AI?</li>
+                <li>I never said that this was Artificial Intelligence, it could stand for Algorithmic Indeed, Artistic Invention, or Areyouactually Intelligent?</li>
+            </li>
+            <li>
+                <li>Why is the formation fixed, and why can't you move the actual positions around?</li>
+                <li>That's because the given formation is the most optimal for positional play. While there are some variations for the bottom 5 players, the attacking 5 players each take up one lane out of the 5: center, half spaces, and the wider areas.</li>
+            </li>
+            <li>
+                <li>What is the basis for the score?</li>
+                <li>The score is based on the optimal allocation of players, not the abilities of the players. For example, Messi and Anthony have the same max points in their optimal position, so it's not about rolling good players, but placing each of the players in their optimal, most effective positions.</li>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <script>
+        const lang = document.querySelector(".lang")
+        const langOption = document.querySelectorAll(".langOption")
+        const glot = new Glottologist();
+
+        window.addEventListener('DOMContentLoaded', function(){
+        changeLang()
+        });
+        langOption.forEach(option=>{
+            option.addEventListener("click", ()=>{
+            changeLang()
+            })
+        })
+
+        function changeLang(){
+            if(lang.value == "en"){
+            glot.import("glotData.json").then(() => {
+            glot.render("en");
+          });
+            }else{
+                glot.import("glotData.json").then(() => {
+                glot.render("ja");
+            });
+            }
+        }
+    </script>
+</body>
+</html>

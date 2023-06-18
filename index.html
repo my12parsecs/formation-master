@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script type="module" src="data.js"></script>
+    <script src="app.js" defer type="module"></script>
+
+    <script src="https://unpkg.com/glottologist"></script>
+</head>
+<body>
+    <select name="lang" id="" class="lang" style="cursor: pointer;">
+        <option value="en" class="langOption">English</option>
+        <option value="ja" class="langOption">日本語</option>
+    </select>
+
+    <h1 class="title">AI <span glot-model="title">Formation Master</span></h1>
+    <h3><a href="info.html" class="info" glot-model="info">Info</a></h3>
+    <h3 class="explanation" glot-model="explanation">Move the players around for the optimal formation. Use the 5 lanes effectively.</h3>
+    
+    
+
+    <div class="main">
+        <div class="player-each lw" id="lw" draggable="true">
+            <div class="player">
+                <img src="https://img.a.transfermarkt.technology/portrait/header/68290-1669394812.jpg?lm=1">
+            </div>
+            <p class="name">Neymar</p>
+            <p class="position">LW</p>
+            <label style="display: none;">lw</label>
+        </div>
+        <div class="player-each cf" id="cf" draggable="true">
+            <div class="player">
+                <img src="https://img.a.transfermarkt.technology/portrait/header/44352-1668156555.jpg?lm=1">
+            </div>
+            <p class="name">Suarez</p>
+            <p class="position">CF</p>
+            <label style="display: none;">cf</label>
+        </div>
+        <div class="player-each rw" id="rw" draggable="true">
+            <div class="player">
+                <img src="https://img.a.transfermarkt.technology/portrait/header/28003-1671435885.jpg?lm=1">
+            </div>
+            <p class="name">Messi</p>
+            <p class="position">RW</p>
+            <label style="display: none;">rw</label>
+        </div>
+        <div class="player-each li" id="li" draggable="true">
+            <div class="player">
+                <img src="https://img.a.transfermarkt.technology/portrait/header/7600-1685447666.jpg?lm=1">
+            </div>
+            <p class="name">Iniesta</p>
+            <p class="position">MF</p>
+            <label style="display: none;">li</label>
+        </div>
+        <div class="player-each pv" id="pv" draggable="true">
+            <div class="player">
+                <img src="https://img.a.transfermarkt.technology/portrait/header/65230-1668168379.jpg?lm=1">
+            </div>
+            <p class="name">Busquets</p>
+            <p class="position">MF</p>
+            <label style="display: none;">pv</label>
+        </div>
+        <div class="player-each ri" id="ri" draggable="true">
+            <div class="player">
+                <img src="https://img.a.transfermarkt.technology/portrait/header/32467-1568021662.jpg?lm=1">
+            </div>
+            <p class="name">Rakitic</p>
+            <p class="position">MF</p>
+            <label style="display: none;">ri</label>
+        </div>
+        <div class="player-each lb" id="lb" draggable="true">
+            <div class="player">
+                <img src="https://img.a.transfermarkt.technology/portrait/header/69751-1684931206.jpg?lm=1">
+            </div>
+            <p class="name">Alba</p>
+            <p class="position">LB</p>
+            <label style="display: none;">lb</label>
+        </div>
+        <div class="player-each lc" id="lc" draggable="true">
+            <div class="player">
+                <img src="https://img.a.transfermarkt.technology/portrait/header/126540-1598302607.jpg?lm=1">
+            </div>
+            <p class="name">Umtiti</p>
+            <p class="position">CB</p>
+            <label style="display: none;">lc</label>
+        </div>
+        <div class="player-each rc" id="rc" draggable="true">
+            <div class="player">
+                <img src="https://img.a.transfermarkt.technology/portrait/header/18944-1667548226.jpg?lm=1">
+            </div>
+            <p class="name">Pique</p>
+            <p class="position">CB</p>
+            <label style="display: none;">rc</label>
+        </div>
+        <div class="player-each rb" id="rb" draggable="true">
+            <div class="player">
+                <img src="https://img.a.transfermarkt.technology/portrait/header/85370-1662585931.jpg?lm=1">
+            </div>
+            <p class="name">Roberto</p>
+            <p class="position">RB</p>
+            <label style="display: none;">rb</label>
+        </div>
+    </div>
+
+    <div class="btn-container">
+        <button class="btn start" glot-model="start">Roll</button>
+        <button class="btn finish" glot-model="finish">Finish</button>
+    </div>
+
+    
+    <div class="result-container">
+        <p class="result-score"><span glot-model="score">Score</span>: </p>
+        <p class="result-score"><span class="result">-</span></p>
+    </div>
+
+</body>
+</html>

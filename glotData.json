@@ -1,0 +1,30 @@
+{
+    "title": {
+      "en": "Formation Master",
+      "ja": "フォーメーションマスター"
+    },
+    "info": {
+      "en": "Info",
+      "ja": "このサイトについて"
+    },
+    "explanation": {
+      "en": "Move the players around for the optimal formation. Use the 5 lanes effectively.",
+      "ja": "選手を適正に配置し、最適な状態を目指せ。5レーンを意識してね。"
+    },
+    "start": {
+      "en": "Roll",
+      "ja": "スタート"
+    },
+    "finish": {
+      "en": "Finish",
+      "ja": "終了"
+    },
+    "score": {
+      "en": "Score",
+      "ja": "点数"
+    },
+    "back": {
+      "en": "Back",
+      "ja": "戻る"
+    }
+  }
