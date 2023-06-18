@@ -116,6 +116,14 @@ let leftwing
 start.addEventListener("click", function(){
     eachRandom(lw)
     eachRandom(cf)
+    eachRandom(rw)
+    eachRandom(li)
+    eachRandom(pv)
+    eachRandom(ri)
+    eachRandom(lb)
+    eachRandom(lc)
+    eachRandom(rc)
+    eachRandom(rb)
 })
 
 function eachRandom(position){
